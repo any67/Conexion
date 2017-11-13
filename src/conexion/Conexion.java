@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package conexion;
+import interfaces.Interfaz;
+import javax.swing.JFrame;
 
 /**
  *
@@ -14,8 +16,12 @@ public class Conexion {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) 
+    {
+       Interfaz w = new Interfaz();
+       w.setVisible(true);
+       w.setBounds(0, 0, 400, 400);
+       w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
 }
